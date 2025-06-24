@@ -1,6 +1,6 @@
-/* Full height and center */
 html, body, #root {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,19 +18,17 @@ html, body, #root {
   box-sizing: border-box;
 }
 
-/* Form container */
 .container {
+  max-width: 800px;
   width: 100%;
-  max-width: 820px;       /* widened from 700px */
-  min-width: 360px;
-  padding: 2.5rem 3rem;   /* a bit more horizontal breathing room */
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  padding: 2rem;
   box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Responsive heading */
 h2 {
   text-align: center;
   font-size: 1.8rem;
@@ -38,7 +36,6 @@ h2 {
   color: #111827;
 }
 
-/* Form fields */
 form > div {
   margin-bottom: 1.25rem;
 }
@@ -75,7 +72,6 @@ textarea {
   min-height: 100px;
 }
 
-/* Submit button */
 button[type="submit"] {
   width: 100%;
   padding: 0.9rem;
@@ -99,14 +95,12 @@ button:hover:not([disabled]) {
   background-color: #2563eb;
 }
 
-/* Error messages */
 .error {
-  color: #dc2626;
-  font-size: 0.875rem;
-  margin-top: 0.4rem;
+  color: red;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  min-height: 1.2em;
 }
-
-/* Submitted data block */
 .submitted-data {
   background-color: #f0fdf4;
   padding: 1.5rem;
